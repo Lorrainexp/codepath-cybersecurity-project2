@@ -1,0 +1,33 @@
+Project 3 - Directory Traversal Attack (FTP/HTTP Lab)
+Overview
+
+This project demonstrates a directory traversal attack against a vulnerable server. The goal is to understand how improper input validation can allow unauthorized access to restricted files outside of the intended directory.
+
+Objective:
+ *Use a Bash script to automate HTTP requests
+ *Perform directory traversal using ../ sequences
+ *Identify sensitive files accessible due to misconfigured access controls
+ *Analyze server behavior and responses
+
+Tools Used:
+ *Bash (attack.sh)
+ *curl
+ *hftp vulnerable server
+
+Files Included:
+ *attack.sh – Bash script used to launch directory traversal attempts against the vulnerable server
+
+Methodology:
+ *A vulnerable local server was started using hftp.
+ *A Bash script was executed to send multiple crafted HTTP requests.
+ *Directory traversal patterns (../) were used to attempt access to restricted directories.
+ *Responses were analyzed to determine which files were successfully accessed.
+ *The server process was terminated after testing.
+Key Concept:
+Directory traversal occurs when an attacker is able to manipulate file paths using sequences like ../ to move outside of the intended directory structure and access sensitive files.
+
+Outcome:
+The script successfully demonstrated how insecure file access controls can expose restricted files on a server.
+
+Notes:
+This project was completed in a controlled lab environment for educational purposes only.
